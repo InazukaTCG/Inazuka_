@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cartes Pokémon FR - Inazuka</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Cartes Pokémon Françaises</h1>
+    <p>Découvrez notre sélection de cartes FR authentiques</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="cartes-fr.html">Cartes FR</a>
+    <a href="cartes-jap.html">Cartes JAP</a>
+    <a href="coffrets.html">Coffrets</a>
+    <a href="boosters.html">Boosters</a>
+    <a href="figurines.html">Figurines</a>
+    <a href="protection.html">Protection</a>
+    <a href="contact.html">Contact</a>
+    <a href="infos.html">Infos légales</a>
+  </nav>
+
+  <section>
+    <h2>Nos cartes FR</h2>
+    <p>Voici quelques exemples :</p>
+    <ul>
+      <li>Dracaufeu VMAX - 15€</li>
+      <li>Pikachu Promo Holo - 6€</li>
+      <li>Rayquaza EX - 20€</li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="categories">
+      <a href="cartes-fr.html">Cartes FR</a>
+      <a href="cartes-jap.html">Cartes JAP</a>
+      <a href="coffrets.html">Coffrets</a>
+      <a href="boosters.html">Boosters</a>
+      <a href="figurines.html">Figurines</a>
+      <a href="protection.html">Protection</a>
+      <a href="contact.html">Contact</a>
+      <a href="infos.html">Infos légales</a>
+    </div>
+    <p>&copy; 2025 Inazuka. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
