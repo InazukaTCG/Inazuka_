@@ -3,82 +3,152 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inazuka - Boutique en Ligne</title>
+  <title>Inazuka - Boutique Pokémon</title>
   <style>
+    :root {
+      --main-color: #001f3f;
+      --accent-color: #FFD700;
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
     }
+
     header {
-      background-color: #001f3f;
-      color: #FFD700;
-      padding: 40px 20px;
+      background-color: var(--main-color);
+      color: var(--accent-color);
+      padding: 60px 20px 40px;
       text-align: center;
     }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5em;
+    }
+
     nav {
-      background-color: #003366;
+      background-color: #002b5b;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
+
     nav a {
       color: white;
-      padding: 15px 20px;
+      padding: 15px 25px;
       text-decoration: none;
-      display: block;
+      font-weight: 500;
+      transition: 0.3s;
     }
+
     nav a:hover {
-      background-color: #FFD700;
-      color: #003366;
+      background-color: var(--accent-color);
+      color: var(--main-color);
     }
+
     section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
       background-color: white;
-      margin-top: 20px;
-      border-radius: 8px;
+      padding: 50px 20px;
+      margin: 30px auto;
+      max-width: 1100px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     }
+
     h2 {
-      color: #001f3f;
+      color: var(--main-color);
+      margin-bottom: 20px;
     }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    form button {
+      background-color: var(--accent-color);
+      color: var(--main-color);
+      border: none;
+      padding: 12px 30px;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    form button:hover {
+      background-color: var(--main-color);
+      color: var(--accent-color);
+    }
+
     footer {
-      background-color: #001f3f;
+      background-color: var(--main-color);
       color: white;
+      padding: 40px 20px;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      margin-top: 60px;
     }
-    .legal, .mentions {
-      font-size: 0.9em;
-      color: #aaa;
-      margin-top: 10px;
-    }
+
     .categories {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin-top: 20px;
       justify-content: center;
+      margin-bottom: 20px;
     }
+
     .categories a {
-      background-color: #FFD700;
-      color: #001f3f;
+      background-color: var(--accent-color);
+      color: var(--main-color);
       text-decoration: none;
       padding: 10px 15px;
       border-radius: 5px;
+      transition: 0.3s;
     }
+
     .categories a:hover {
-      background-color: #001f3f;
-      color: #FFD700;
+      background-color: white;
+      color: var(--main-color);
+      border: 1px solid var(--accent-color);
+    }
+
+    .legal, .mentions {
+      font-size: 0.85em;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        padding: 10px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Bienvenue sur Inazuka</h1>
-    <p>Votre boutique en ligne de cartes Pokémon, goodies et plus encore !</p>
+    <h1>Inazuka</h1>
+    <p> – Ouverture très prochaine !</p>
   </header>
 
   <nav>
@@ -94,33 +164,39 @@
   </nav>
 
   <section id="accueil">
-    <h2>Accueil</h2>
-    <p>Bienvenue sur <strong>Inazuka</strong>, votre destination en ligne pour tout ce qui concerne les cartes Pokémon, les goodies et bien plus encore.</p>
+    <h2>Bienvenue sur Inazuka</h2>
+    <p><strong>Inazuka</strong> est votre boutique en ligne spécialisée dans l’univers Pokémon : cartes, goodies, figurines et bien plus encore.</p>
   </section>
 
   <section id="apropos">
-    <h2>À propos</h2>
-    <p>Chez Inazuka, nous sommes passionnés par l'univers Pokémon. Nous proposons une sélection de cartes, figurines, peluches et autres articles de collection pour les fans de tous âges.</p>
-    <p>Notre objectif est de créer une communauté de collectionneurs et de passionnés en offrant des produits authentiques, livrés rapidement, avec un service client de qualité.</p>
+    <h2>À propos de nous</h2>
+    <p>Notre mission est de proposer des produits authentiques, de qualité, livrés rapidement avec un service client à l’écoute.</p>
+    <p>En tant que passionnés et collectionneurs nous-mêmes, nous savons ce que vous attendez : fiabilité, transparence et excellence.</p>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>Contactez-nous</h2>
     <form>
-      <label>Nom:<br><input type="text" name="nom" required></label><br><br>
-      <label>Email:<br><input type="email" name="email" required></label><br><br>
-      <label>Message:<br><textarea name="message" rows="5" required></textarea></label><br><br>
-      <button type="submit" style="background-color: #FFD700; border: none; padding: 10px 20px; cursor: pointer;">Envoyer</button>
+      <label>Nom :
+        <input type="text" name="nom" placeholder="Votre nom" required>
+      </label>
+      <label>Email :
+        <input type="email" name="email" placeholder="Votre adresse email" required>
+      </label>
+      <label>Message :
+        <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+      </label>
+      <button type="submit">Envoyer</button>
     </form>
   </section>
 
   <section id="infos">
     <h2>Informations légales</h2>
-    <p>Nom de l'entreprise : Inazuka SARL</p>
-    <p>Adresse : 123 Rue du Commerce, 75000 Paris, France</p>
-    <p>SIRET : 123 456 789 00000</p>
-    <p>Email professionnel : contact@inazuka.fr</p>
-    <p class="legal">Ce site est en cours de développement. Tous les produits mentionnés sont à titre d'exemple.</p>
+    <p><strong>Entreprise :</strong> CP Shop (Inazuka)</p>
+    <p><strong>Adresse :</strong> 8 Rue Jodelle, 80080 Amiens, France</p>
+    <p><strong>SIRET :</strong> 94469389400015</p>
+    <p><strong>Email :</strong> inazukatcg@gmail.com</p>
+    <p class="legal">Ce site est actuellement en cours de développement et de validation auprès de nos partenaires.</p>
   </section>
 
   <footer>
@@ -131,11 +207,10 @@
       <a href="boosters.html">Boosters</a>
       <a href="figurines.html">Figurines</a>
       <a href="protection.html">Protection</a>
-      <a href="#contact">Contact</a>
-      <a href="#infos">Infos légales</a>
     </div>
     <p>&copy; 2025 Inazuka. Tous droits réservés.</p>
     <p class="mentions">Mentions légales | Conditions générales de vente</p>
   </footer>
+
 </body>
 </html>
