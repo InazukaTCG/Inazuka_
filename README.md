@@ -5,7 +5,7 @@ Votre site spécialisé dans la vente de cartes Pokémon, accessoires et goodies
 
 ## 🔥 Ce que vous trouverez ici :
 - Cartes Pokémon Françaises et Japonaises
-- Boosters, coffrets et séries spéciales
+- Boosters, coffrets
 - Figurines, peluches et articles de collection
 - Protections et accessoires pour collectionneurs
 
